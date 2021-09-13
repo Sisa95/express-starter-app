@@ -19,3 +19,18 @@ body {
 	padding: 0.5em;
 	margin-bottom: 0.25em;
 }
+td{
+	padding-left: 50px;
+}
+table{
+	margin: auto;
+	background-color: aqua;
+}
+.small_pizza, .medium_pizza, .large_pizza{
+	border-radius: 50%;
+	font-size: 0.9rem;
+}
+
+img{
+	width: 200px;
+}

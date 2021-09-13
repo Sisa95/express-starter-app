@@ -1,15 +1,89 @@
-<h1>Counter Index</h1>
+<h1> Perfect Pizza</h1>
 
 
 <div>
-    Start here
+    <table>
+
+        <tbody>
+            <h2> Pizza Cart</h2>
+            <tr>
+                <td>Small</td>
+                <td><button class="small_pizza">+</button> <button class="small_pizza">-</button></td>
+                <td>R0.00 </td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td><button class="medium_pizza">+</button> <button class="medium_pizza">-</button></td>
+                <td>R0.00 </td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td><button class="large_pizza">+</button> <button class="large_pizza">-</button></td>
+                <td>R0.00 </td>
+            </tr>
+            <tr>
+                <td>Total Cost</td>
+                <td></td>
+                <td>R0.00 </td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+<br>
+
+    <table>
+
+        <tbody>
+            <tr>
+                <td><img src="./pizza.png"></td>
+                <td><img src="./pizza.png"></td>
+                <td><img src="./pizza.png"></td>
+            </tr>
+            <tr>
+                <td> Small Pizza</td>
+                <td>Medium Pizza</td>
+                <td>Large Pizza</td>
+            </tr>
+             <tr>
+                <td><ul>
+                   <li>small pizza with 3 toppings</li>
+                     <li>1 meat topping.</li>
+                <li>or less other toppings</li>
+                </ul></td>
+
+                <td><ul>
+                   <li>margeritha pizza with 3 toppings max</li>
+                     <li>2 or less meat toppings max</li>
+                <li>3 or less other toppings.</li>
+                </ul></td>
+
+                <td><ul>
+                   <li>large margeritha pizza with 3 toppings max</li>
+                     <li>3 meat toppings max</li>
+                <li>3 or less other toppings.</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>R35</td>
+                <td>R55</td>
+                <td>R70</td>
+            </tr>
+             <tr>
+                <td><button>BUY</button></td>
+                <td><button>BUY</button></td>
+                 <td><button>BUY</button></td>
+            </tr>
+        </tbody>
+    </table>
+
 
     <form action="/count" method="post">
-        <div class="counter" >
+        <div class="counter">
+
             {{counter}}
-        </div>    
+        </div>
         <input type="submit" value="Press button to count">
-    
+
     </form>
 
 </div>

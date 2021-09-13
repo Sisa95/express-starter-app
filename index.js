@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
 // add more middleware to allow for templating support
-
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
