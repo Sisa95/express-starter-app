@@ -6,30 +6,49 @@
 
         <tbody>
             <h2> Pizza Cart</h2>
-            <tr>
-                <td>Small</td>
-                <td><button class="small_pizza">+</button> <button class="small_pizza">-</button></td>
-                <td>R0.00 </td>
-            </tr>
-            <tr>
-                <td>Medium</td>
-                <td><button class="medium_pizza">+</button> <button class="medium_pizza">-</button></td>
-                <td>R0.00 </td>
-            </tr>
-            <tr>
-                <td>Large</td>
-                <td><button class="large_pizza">+</button> <button class="large_pizza">-</button></td>
-                <td>R0.00 </td>
-            </tr>
+            <form action="/" method="POST">
+                <tr>
+                    <td>Small</td>
+                    <td><button class="small_pizza" formaction="/addSmallPizza" type="submit">+</button>
+                        <button class="small_pizza" formaction="/subSmallPizza" type="submit">-</button>
+                    </td>
+                    <td>R{{smallTotal}}</td>
+                </tr>
+            </form>
+            <form action="/" method="POST">
+                <tr>
+                    <td>Medium</td>
+                    <td><button class="medium_pizza" formaction="/addMediumPizza" type="submit">+</button>
+                        <button class="medium_pizza" formaction="/subMediumPizza" type="submit">-</button>
+                    </td>
+                    <td>R{{mediumTotal}}</td>
+                </tr>
+            </form>
+            <form action="/" method="POST">
+                <tr>
+                    <td>Large</td>
+                    <td><button class="large_pizza" formaction="/addLargePizza" type="submit">+</button>
+                        <button class="large_pizza" formaction="/subLargPizza" type="submit">-</button>
+                    </td>
+                    <td>R{{largeTotal}}</td>
+                </tr>
+            </form>
             <tr>
                 <td>Total Cost</td>
                 <td></td>
-                <td>R0.00 </td>
+                <td>R{{grandTotal}}</td>
             </tr>
+            <form action="/orders" method="get">
+                <tr>
+                    <td></td>
+                    <td><a href="/orders"><button>Checkout</button></a></td>
+                    <td></td>
+                </tr>
+            </form>
         </tbody>
     </table>
-<br>
-<br>
+    <br>
+    <br>
 
     <table>
 
@@ -44,34 +63,40 @@
                 <td>Medium Pizza</td>
                 <td>Large Pizza</td>
             </tr>
-             <tr>
-                <td><ul>
-                   <li>small pizza with 3 toppings</li>
-                     <li>1 meat topping.</li>
-                <li>or less other toppings</li>
-                </ul></td>
+            <tr>
+                <td>
+                    <ul>
+                        <li>small pizza with 3 toppings</li>
+                        <li>1 meat topping.</li>
+                        <li>or less other toppings</li>
+                    </ul>
+                </td>
 
-                <td><ul>
-                   <li>margeritha pizza with 3 toppings max</li>
-                     <li>2 or less meat toppings max</li>
-                <li>3 or less other toppings.</li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li>margeritha pizza with 3 toppings max</li>
+                        <li>2 or less meat toppings max</li>
+                        <li>3 or less other toppings.</li>
+                    </ul>
+                </td>
 
-                <td><ul>
-                   <li>large margeritha pizza with 3 toppings max</li>
-                     <li>3 meat toppings max</li>
-                <li>3 or less other toppings.</li>
-                </ul></td>
+                <td>
+                    <ul>
+                        <li>large margeritha pizza with 3 toppings max</li>
+                        <li>3 meat toppings max</li>
+                        <li>3 or less other toppings.</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
-                <td>R35</td>
-                <td>R55</td>
-                <td>R70</td>
+                <td>R31.99</td>
+                <td>R58.99</td>
+                <td>R87.99</td>
             </tr>
-             <tr>
+            <tr>
                 <td><button>BUY</button></td>
                 <td><button>BUY</button></td>
-                 <td><button>BUY</button></td>
+                <td><button>BUY</button></td>
             </tr>
         </tbody>
     </table>
