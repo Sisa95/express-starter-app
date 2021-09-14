@@ -48,8 +48,6 @@ app.post("/addSmallPizza", function(req,res){
 	res.redirect("/")
 })
 
-
-
 app.get("/orders", (req, res) =>{
    
     // res.render("greeted_names", {list: await greetings.dataList()})
